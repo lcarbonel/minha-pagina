@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eSocial — Guia de Eventos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #F7F6F2;
+    padding: 28px;
+    width: 1100px;
+  }
+
+  .page {
+    background: #fff;
+    border-radius: 14px;
+    padding: 28px 28px 24px;
+    border: 1px solid #E2E0D8;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #2C2C2A;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+  }
+  .header-title { font-size: 24px; font-weight: 600; color: #1a1a19; letter-spacing: -0.4px; }
+  .header-sub { font-size: 11px; color: #888780; text-align: right; line-height: 1.6; }
+  .header-tag { display: inline-block; font-size: 10px; font-weight: 500; background: #2C2C2A; color: #F1EFE8; padding: 2px 8px; border-radius: 4px; margin-top: 2px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .full-width { grid-column: 1 / -1; }
+
+  .section {
+    border: 0.5px solid #D3D1C7;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #fff;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 0.5px solid #E2E0D8;
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  .section-title { font-size: 10.5px; font-weight: 600; color: #2C2C2A; text-transform: uppercase; letter-spacing: 0.6px; }
+
+  .event-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    border-bottom: 0.5px solid #EDEBE4;
+  }
+  .event-row:last-child { border-bottom: none; }
+
+  .badge {
+    font-size: 9.5px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 48px;
+    text-align: center;
+    margin-top: 1px;
+  }
+  .event-desc { font-size: 11px; font-weight: 500; color: #2C2C2A; line-height: 1.4; }
+  .event-detail { font-size: 10px; color: #888780; line-height: 1.35; margin-top: 1px; }
+
+  /* Colors */
+  .dot-blue { background: #378ADD; }
+  .badge-blue { background: #E6F1FB; color: #0C447C; }
+
+  .dot-teal { background: #1D9E75; }
+  .badge-teal { background: #E1F5EE; color: #085041; }
+
+  .dot-purple { background: #7F77DD; }
+  .badge-purple { background: #EEEDFE; color: #3C3489; }
+
+  .dot-coral { background: #D85A30; }
+  .badge-coral { background: #FAECE7; color: #712B13; }
+
+  .dot-amber { background: #BA7517; }
+  .badge-amber { background: #FAEEDA; color: #633806; }
+
+  .dot-green { background: #639922; }
+  .badge-green { background: #EAF3DE; color: #27500A; }
+
+  .dot-red { background: #E24B4A; }
+  .badge-red { background: #FCEBEB; color: #791F1F; }
+
+  .proc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .proc-item { display: flex; flex-direction: column; gap: 4px; }
+
+  .footer {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 0.5px solid #D3D1C7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 10px; color: #888780; }
+  .footer-ref { font-size: 10px; color: #B4B2A9; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="header-title">eSocial — Guia de Eventos</div>
+      <div style="font-size:11px;color:#888780;margin-top:3px;">Manual de Orientação do eSocial · MOS S-1.3 · Referência rápida diária</div>
+    </div>
+    <div class="header-sub">
+      Todos os grupos de eventos<br>
+      <span class="header-tag">Versão consolidada 2026</span>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- Tabelas -->
+    <div class="section">
+      <div class="section-header">
+        <div class="dot dot-blue"></div>
+        <div class="section-title">Tabelas do empregador</div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-blue">S-1000</span>
+        <div><div class="event-desc">Dados do empregador</div><div class="event-detail">Cadastro e classificação tributária</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-blue">S-1005</span>
+        <div><div class="event-desc">Estabelecimentos e obras</div><div class="event-detail">Filiais, canteiros e órgãos públicos</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-blue">S-1010</span>
+        <div><div class="event-desc">Rubricas</div><div class="event-detail">Verbas da folha: salários, extras, descontos</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-blue">S-1020</span>
+        <div><div class="event-desc">Lotações tributárias</div><div class="event-detail">Classificação tributária por local de trabalho</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-blue">S-1070</span>
+        <div><div class="event-desc">Processos adm./judiciais</div><div class="event-detail">Decisões que afetam tributos e direitos</div></div>
+      </div>
+    </div>
+
+    <!-- Periódicos -->
+    <div class="section">
+      <div class="section-header">
+        <div class="dot dot-teal"></div>
+        <div class="section-title">Eventos periódicos</div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1200</span>
+        <div><div class="event-desc">Remuneração RGPS</div><div class="event-detail">Folha dos trabalhadores do regime geral</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1202</span>
+        <div><div class="event-desc">Remuneração RPPS</div><div class="event-detail">Folha de servidores com regime próprio</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1207</span>
+        <div><div class="event-desc">Benefícios – entes públicos</div><div class="event-detail">Pagamentos de benefícios por órgãos públicos</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1210</span>
+        <div><div class="event-desc">Pagamentos</div><div class="event-detail">Datas e valores pagos aos trabalhadores</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1260</span>
+        <div><div class="event-desc">Produção rural PF</div><div class="event-detail">Comercialização por pessoa física rural</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1270</span>
+        <div><div class="event-desc">Avulsos não portuários</div><div class="event-detail">Contratação de trabalhadores avulsos</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1280</span>
+        <div><div class="event-desc">Info. complementares</div><div class="event-detail">Dados adicionais aos eventos periódicos</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1298</span>
+        <div><div class="event-desc">Reabertura</div><div class="event-detail">Reabre competência já encerrada para correção</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-teal">S-1299</span>
+        <div><div class="event-desc">Fechamento mensal</div><div class="event-detail">"Folha fechada" — encerra a competência</div></div>
+      </div>
+    </div>
+
+    <!-- Saúde e Segurança -->
+    <div class="section">
+      <div class="section-header">
+        <div class="dot dot-coral"></div>
+        <div class="section-title">Saúde, segurança e afastamentos</div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-coral">S-2210</span>
+        <div><div class="event-desc">Acidente de trabalho (CAT)</div><div class="event-detail">Comunicação de acidente de trabalho</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-coral">S-2220</span>
+        <div><div class="event-desc">Saúde do trabalhador</div><div class="event-detail">Exames médicos ocupacionais (ASO)</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-coral">S-2221</span>
+        <div><div class="event-desc">Exame toxicológico</div><div class="event-detail">Específico para motoristas profissionais</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-coral">S-2230</span>
+        <div><div class="event-desc">Afastamento temporário</div><div class="event-detail">Licenças, doenças, INSS etc.</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-coral">S-2231</span>
+        <div><div class="event-desc">Cessão a outro órgão</div><div class="event-detail">Servidor cedido a outro ente público</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-coral">S-2240</span>
+        <div><div class="event-desc">Agentes nocivos</div><div class="event-detail">Insalubridade e periculosidade</div></div>
+      </div>
+    </div>
+
+    <!-- Admissão e Vínculo -->
+    <div class="section">
+      <div class="section-header">
+        <div class="dot dot-purple"></div>
+        <div class="section-title">Admissão e vínculo</div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-purple">S-2190</span>
+        <div><div class="event-desc">Registro preliminar</div><div class="event-detail">Admissão emergencial antes do S-2200</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-purple">S-2200</span>
+        <div><div class="event-desc">Admissão / ingresso</div><div class="event-detail">Contratação de novo empregado</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-purple">S-2205</span>
+        <div><div class="event-desc">Alteração cadastral</div><div class="event-detail">Atualização de dados pessoais do trabalhador</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-purple">S-2206</span>
+        <div><div class="event-desc">Alteração contratual</div><div class="event-detail">Cargo, salário, jornada etc.</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-purple">S-2298</span>
+        <div><div class="event-desc">Reintegração</div><div class="event-detail">Retorno após desligamento revertido</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-purple">S-2299</span>
+        <div><div class="event-desc">Desligamento</div><div class="event-detail">Rescisão do contrato de trabalho</div></div>
+      </div>
+    </div>
+
+    <!-- Sem Vínculo -->
+    <div class="section">
+      <div class="section-header">
+        <div class="dot dot-amber"></div>
+        <div class="section-title">Sem vínculo empregatício</div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-amber">S-2300</span>
+        <div><div class="event-desc">Início da prestação</div><div class="event-detail">Autônomos, diretores, estagiários</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-amber">S-2306</span>
+        <div><div class="event-desc">Alteração contratual</div><div class="event-detail">Mudanças no contrato do prestador</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-amber">S-2399</span>
+        <div><div class="event-desc">Término</div><div class="event-detail">Encerramento da prestação de serviço</div></div>
+      </div>
+    </div>
+
+    <!-- Beneficiários -->
+    <div class="section">
+      <div class="section-header">
+        <div class="dot dot-green"></div>
+        <div class="section-title">Beneficiários — entes públicos</div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-green">S-2400</span>
+        <div><div class="event-desc">Cadastro de beneficiários</div><div class="event-detail">Aposentados e pensionistas de órgãos públicos</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-green">S-2405</span>
+        <div><div class="event-desc">Alt. cadastral beneficiário</div><div class="event-detail">Atualização dos dados do beneficiário</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-green">S-2410</span>
+        <div><div class="event-desc">Cadastro de benefícios</div><div class="event-detail">Tipo e valor do benefício concedido</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-green">S-2416</span>
+        <div><div class="event-desc">Alteração do benefício</div><div class="event-detail">Mudanças no benefício concedido</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-green">S-2418</span>
+        <div><div class="event-desc">Reativação de benefício</div><div class="event-detail">Benefício suspenso volta a ser pago</div></div>
+      </div>
+      <div class="event-row">
+        <span class="badge badge-green">S-2420</span>
+        <div><div class="event-desc">Término do benefício</div><div class="event-detail">Encerramento do benefício</div></div>
+      </div>
+    </div>
+
+    <!-- Processos Trabalhistas -->
+    <div class="section full-width">
+      <div class="section-header">
+        <div class="dot dot-red"></div>
+        <div class="section-title">Processos trabalhistas</div>
+      </div>
+      <div class="proc-grid">
+        <div class="proc-item">
+          <span class="badge badge-red" style="width:fit-content;">S-2500</span>
+          <div class="event-desc">Processo trabalhista</div>
+          <div class="event-detail">Condenações na Justiça do Trabalho</div>
+        </div>
+        <div class="proc-item">
+          <span class="badge badge-red" style="width:fit-content;">S-2501</span>
+          <div class="event-desc">Tributos do processo</div>
+          <div class="event-detail">Valores tributários decorrentes da ação</div>
+        </div>
+        <div class="proc-item">
+          <span class="badge badge-red" style="width:fit-content;">S-2555</span>
+          <div class="event-desc">Consolidação de tributos</div>
+          <div class="event-detail">Solicita consolidação dos tributos do processo</div>
+        </div>
+        <div class="proc-item">
+          <span class="badge badge-red" style="width:fit-content;">S-3500</span>
+          <div class="event-desc">Exclusão de eventos</div>
+          <div class="event-detail">Exclui eventos de processos trabalhistas</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="legend">
+      <div class="legend-item"><div class="dot dot-blue"></div> Tabelas</div>
+      <div class="legend-item"><div class="dot dot-teal"></div> Periódicos</div>
+      <div class="legend-item"><div class="dot dot-purple"></div> Vínculo</div>
+      <div class="legend-item"><div class="dot dot-coral"></div> SST / Afastamentos</div>
+      <div class="legend-item"><div class="dot dot-amber"></div> Sem vínculo</div>
+      <div class="legend-item"><div class="dot dot-green"></div> Benefícios</div>
+      <div class="legend-item"><div class="dot dot-red"></div> Processos</div>
+    </div>
+    <div class="footer-ref">eSocial MOS S-1.3 · 2026</div>
+  </div>
+</div>
+</body>
+</html>
